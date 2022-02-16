@@ -1,0 +1,27 @@
+{
+  "name": "cooper",
+  "version": "1.0.0",
+  "description": "A starter template for building websites using Sass.",
+  "main": "index.html",
+  "scripts": {
+    "compile": "node-sass --include-path scss sass/style.scss css/style.css --output-style expanded && node-sass --include-path scss sass/style.scss css/style.min.css --output-style compressed && autoprefixer-cli -o css/style.css css/style.css && autoprefixer-cli -o css/style.min.css css/style.min.css",
+    "watch": "nodemon -e scss -x 'npm run compile'",
+    "live-server": "live-server",
+    "start": "npm-run-all -p live-server watch"
+  },
+  "keywords": [
+    "css",
+    "sass"
+  ],
+  "author": "Ondřej Vitula",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "live-server": "^1.2.1",
+    "nodemon": "^1.8.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
