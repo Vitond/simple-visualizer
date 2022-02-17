@@ -7,4 +7,5 @@ module.exports = {
         filename: './index.js',
         path: __dirname + "/js"
     },
+    devtool: 'eval-source-map'
 };
