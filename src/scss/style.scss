@@ -1,2 +1,26 @@
 @import 'abstracts/variables.scss';
 @import 'base/base.scss';
+
+html {
+    background-color: black;
+}
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+.toolbar {
+    border: 2px solid white;
+
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    top: 0;
+    left: 0;
+
+    transition: all .2s;
+
+    &.hidden {
+        transform: translateX(-100%);
+    }
+}
