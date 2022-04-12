@@ -1,4 +1,4 @@
-# Default SCSS and JavaScript project
+# Simple visualizer code along
 A starter template for creative coding experiments with SCSS and JavaScript.
 
 ## Usage
